@@ -1,0 +1,18 @@
+services:
+  sales-forecast:
+    build: .
+    container_name: store-sales-forecast
+    ports:
+      # http://localhost:8502 (8501 is left free for other Streamlit apps)
+      - "8502:8501"
+    environment:
+      DEFAULT_STORE: "336"
+    volumes:
+      # Models you train yourself with training/ are picked up from here first
+      - ./models:/app/models:ro
+      # Models and the sales history downloaded from Hugging Face survive re-creation
+      - hf-cache:/app/.cache
+    restart: unless-stopped
+
+volumes:
+  hf-cache:

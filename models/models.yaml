@@ -1,0 +1,23 @@
+# The four forecasting models. Each is loaded from models/<folder>/ when that folder
+# exists, otherwise downloaded from the Hugging Face Hub on first use.
+models:
+  - key: gradient-boosting
+    name: Gradient boosting
+    folder: rossmann-gradient-boosting
+    hub_id: jramduran/rossmann-sales-gradient-boosting
+    color: "#eda100"
+  - key: random-forest
+    name: Random forest
+    folder: rossmann-random-forest
+    hub_id: jramduran/rossmann-sales-random-forest
+    color: "#1baf7a"
+  - key: linear-regression
+    name: Linear regression
+    folder: rossmann-linear-regression
+    hub_id: jramduran/rossmann-sales-linear-regression
+    color: "#2a78d6"
+  - key: decision-tree
+    name: Decision tree
+    folder: rossmann-decision-tree
+    hub_id: jramduran/rossmann-sales-decision-tree
+    color: "#eb6834"

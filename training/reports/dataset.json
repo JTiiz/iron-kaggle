@@ -1,0 +1,16 @@
+{
+  "source": "https://huggingface.co/datasets/AiiN-aini/rossmann-store-sales",
+  "revision": "bccc4440e13d9e8e55dd2b344e6867767ffc7e48",
+  "stores": 1115,
+  "rows_total": 1017209,
+  "train_rows": 804056,
+  "test_rows": 40282,
+  "train_period": [
+    "2013-01-01",
+    "2015-06-19"
+  ],
+  "test_period": [
+    "2015-06-20",
+    "2015-07-31"
+  ]
+}
