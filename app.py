@@ -206,7 +206,7 @@ with right:
             height=260, margin=dict(l=10, r=40, t=10, b=10), paper_bgcolor=SURFACE, plot_bgcolor=SURFACE,
             font=dict(color=INK2), bargap=0.35, showlegend=False,
             xaxis=dict(title="Predicted sales (EUR) · dashed line: store's average for this weekday",
-                       gridcolor=GRID, tickformat=",.0f", range=[0, max(max(p[k] for k in keys), typical) * 1.08]),
+                       gridcolor=GRID, tickformat=",.0f", range=[0, max(max(p[k] for k in keys) * 1.08, typical * 1.6)]),
             yaxis=dict(autorange="reversed"))
         st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
         if holiday != "None" or pd.Timestamp(day).day_of_week == 6:
