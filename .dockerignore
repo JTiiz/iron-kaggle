@@ -1,0 +1,8 @@
+*
+!pyproject.toml
+!uv.lock
+!app.py
+!forecast/
+!.streamlit/
+!models/models.yaml
+**/__pycache__

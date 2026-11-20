@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Model weights live on the Hugging Face Hub, never in git
+models/*/
+
+# Local secrets
+.env
+
+# Model card previews written by upload_to_hub.py --dry-run
+training/reports/*/MODEL_CARD_PREVIEW.md
