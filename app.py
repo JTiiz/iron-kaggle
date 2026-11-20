@@ -132,9 +132,9 @@ with left:
     for key, m in models.items():
         src = ("local copy" if m["source"] == "local" else
                f"<a href='https://huggingface.co/{m['hub_id']}' title='{m['hub_id']}' target='_blank'>"
-               "model on Hugging Face ↗</a>")
+               "🤗 Hugging Face ↗</a>")
         st.markdown(f"<span class='swatch' style='background:{m['color']}'></span>**{m['name']}** "
-                    f"{m['info']['metrics']['r2']:.3f} · <span class='muted'>{src}</span>",
+                    f"{m['info']['metrics']['r2']:.3f}<br><span class='muted'>{src}</span>",
                     unsafe_allow_html=True)
 
 with right:
